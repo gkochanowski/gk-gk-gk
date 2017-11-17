@@ -2,7 +2,18 @@
 <html>
 <head>
 <title>Gabriela's Website</title>
- <link href="code.css" rel="stylesheet" type="text/css">
+
+ var loadCss = require('load-css-file');
+loadCss('https://raw.githubusercontent.com/gkochanowski/gkochanowski.github.io/master/code.css');
+
+// or
+
+loadCss({
+  href: 'code.css',
+  rel: 'stylesheet',
+  text: 'text/css'
+})
+ 
  </head>
 <body>
   
